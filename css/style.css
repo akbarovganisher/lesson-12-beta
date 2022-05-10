@@ -1,0 +1,231 @@
+/* GOOGLE FONT */
+
+@font-face {
+  font-family: 'i-m';
+  src: url(/font/Inter-Medium.ttf);
+}
+
+@font-face {
+  font-family: 'p-b';
+  src: url(/font/Poppins-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'p-r';
+  src: url(/font/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'p-m';
+  src: url(/font/Poppins-Medium.ttf);
+}
+
+@font-face {
+  font-family: 'p-s';
+  src: url(/font/Poppins-SemiBold.ttf);
+}
+
+/* root */
+
+h1, h2, h3, h4 {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: #173A56;
+  font-size: 30px;
+  line-height: 28px;
+  font-family: 'p-b';
+}
+
+h2 {
+  font-size: 32px;
+  line-height: 48px;
+  color: #22343D;
+  font-family: 'p-b';
+}
+
+h3 {
+  font-size: 22px;
+  line-height: 32px;
+  color: #22343D;
+  font-family: 'p-s';
+}
+
+p {
+  font-size: 18px;
+  line-height: 28px;
+  color: #22343D;
+  font-family: 'p-r';
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+li {
+  margin: 0 35px 0 0;
+}
+
+a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  transition: all .3s ease;
+}
+
+/* Basic */
+
+*,
+*::after,
+*::before,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #E5E5E5;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Hero vs Header */
+
+/* Header */
+
+header {
+  padding: 20px 0 50px 0;
+}
+
+.header-logo a {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo h1 {
+  margin-left: 15px;
+}
+
+nav {
+  display: flex;
+  justify-content: end;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+}
+
+nav ul li:nth-child(7) {
+  margin: 0;
+}
+
+nav ul li a {
+  color: #22343D;
+  font-size: 16px;
+  line-height: 28px;
+  font-family: 'p-r';
+  display: flex;
+  transition: all .3s ease;
+}
+
+nav ul li:hover a {
+  color: #02897A;
+}
+
+nav ul li .activ {
+  font-family: 'p-s';
+}
+
+nav ul li .sign-in {
+  color: #173A56;
+  line-height: 24px;
+  font-size: 16px;
+  border: 1px solid #BCD0E5;
+  border-radius: 4px;
+  padding: 10px 25px;
+  font-family: 'p-s';
+  background-color: transparent;
+  transition: all .3s ease;
+}
+
+nav ul li .sign-up {
+  color: #fff;
+  background-color: #02897A;
+  line-height: 24px;
+  font-size: 16px;
+  border: 1px solid #02897A;
+  border-radius: 4px;
+  padding: 10px 25px;
+  font-family: 'p-s';
+  transition: all .3s ease;
+}
+
+nav ul li .sign-up:hover {
+  background-color: transparent;
+  color: #02897A;
+}
+
+nav ul li .sign-in:hover {
+  background-color: #BCD0E5;
+  color: #000;
+}
+
+.bx-adjust {
+  color: #02897A;
+  font-size: 30px;
+}
+
+.header-menu {
+  display: none;
+}
+
+/* res */
+
+@media screen and (max-width: 992px) {
+  body {
+    background-color: #22343D;
+  }
+  nav ul {
+    display: none;
+  }
+  .header-menu {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    background-color: #19480f;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  body {
+    background-color: #df1717;
+  }
+}
+
+@media screen and (max-width: 424px) {
+  body {
+    background-color: #ff00f7;
+  }
+}
+
+/* end */
