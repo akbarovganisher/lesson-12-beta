@@ -66,11 +66,6 @@ ul, li {
   list-style: none;
 }
 
-
-li {
-  margin: 0 35px 0 0;
-}
-
 a {
   color: rgb(0, 0, 0);
   text-decoration: none;
@@ -130,6 +125,13 @@ nav {
 nav ul {
   display: flex;
   align-items: center;
+}
+
+
+nav ul li{
+  display: flex;
+  align-items: center;
+  margin: 0 35px 0 0;
 }
 
 nav ul li:nth-child(7) {
@@ -200,7 +202,7 @@ nav ul li .sign-in:hover {
 
 @media screen and (max-width: 992px) {
   body {
-    background-color: #22343D;
+    background-color: #ddc618;
   }
   nav ul {
     display: none;
@@ -215,7 +217,7 @@ nav ul li .sign-in:hover {
     background-color: #19480f;
   }
 }
-
+/* 
 @media screen and (max-width: 576px) {
   body {
     background-color: #df1717;
@@ -226,6 +228,6 @@ nav ul li .sign-in:hover {
   body {
     background-color: #ff00f7;
   }
-}
+} */
 
 /* end */
