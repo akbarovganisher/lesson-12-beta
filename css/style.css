@@ -72,6 +72,10 @@ a {
   transition: all .3s ease;
 }
 
+img {
+  width: 100%;
+}
+
 /* Basic */
 
 *,
@@ -111,6 +115,10 @@ header {
 .header-logo a {
   display: flex;
   align-items: center;
+}
+
+.header-logo a img {
+  width: 40px;
 }
 
 .header-logo h1 {
@@ -196,6 +204,74 @@ nav ul li .sign-in:hover {
 
 .header-menu {
   display: none;
+  margin-top: 2px;
+  cursor: pointer;
+}
+
+.header-menu i{
+  font-size: 30px;
+  color: #173A56;
+}
+
+/* Hero-banner */
+
+.hero-banner-title {
+  font-size: 40px;
+  line-height: 60px;
+}
+
+.hero-banner-text {
+  margin: 20px 0 40px 0;
+}
+
+.hero-banner-link-box {
+  display: flex;
+  align-items: center;
+}
+
+.hero-banner-link-box .hero-get-link {
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  font-family: 'p-b';
+  background-color: #02897A;
+  padding: 10px 30px;
+  border: 1px solid #02897A;
+  border-radius: 4px;
+  transition: all .3s ease;
+  margin-right: 30px;
+}
+
+.hero-video-box {
+  display: flex;
+  align-items: center;
+  transition: all .3s;
+}
+
+.hero-video-box .bxs-right-arrow {
+  font-size: 20px;
+  color: #02897A;
+  margin-right: 8px;
+  transition: all .3s;
+}
+
+.hero-video-box .hero-video-link {
+  font-size: 16px;
+  line-height: 24px;
+  color: #02897A;
+  font-family: 'p-s';
+  border-bottom: 1px solid #02897A;
+  transition: all .3s;
+}
+
+.hero-banner-link-box .hero-get-link:hover {
+  background-color: transparent;
+  color: #02897A;
+}
+
+.hero-video-box:hover .bxs-right-arrow, .hero-video-box:hover .hero-video-link {
+  border: none;
+  color: #0f3e39;
 }
 
 /* res */
@@ -210,13 +286,28 @@ nav ul li .sign-in:hover {
   .header-menu {
     display: block;
   }
-}
-
-@media screen and (max-width: 768px) {
-  body {
-    background-color: #19480f;
+  .hero-banner-box {
+    flex-direction: column-reverse;
+  }
+  .hero-banner-text-box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .hero-banner-title, .hero-banner-text {
+    text-align: center;
+  }
+  .hero-banner-title {
+    font-size: 36px;
+    margin-top: 10px;
   }
 }
+/* 
+@media screen and (max-width: 768px) {
+  body {
+    background-color: #be1e0c;
+  }
+} */
 /* 
 @media screen and (max-width: 576px) {
   body {
